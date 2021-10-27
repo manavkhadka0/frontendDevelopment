@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #8716b4;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+}
+
+.header {
+  border-bottom: 1px solid #f0f0f0;
+  box-shadow: inset 0 -1px 0 #f0f0f0;
+  background-color: #f7f7f7;
+  align-items: center;
+  display: flex;
+  position: relative;
+  padding: 20px 40px;
+}
+
+.header h2 {
+  display: inline-flex;
+  margin-right: 10px;
+  color: #8e44ad;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.header i {
+  visibility: hidden;
+  position: absolute;
+  right: 50px;
+}
+
+.header.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.header.success h2 {
+  color: #2ecc71;
+}
+.header.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+.header.error h2 {
+  color: #e74c3c;
+}
+
+.error-message {
+  display: none;
+  padding: 8px 40px;
+  font-weight: 700;
+  font-size: larger;
+  color: #e74c3c;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  background: rgb(196, 112, 221);
+  color: #fff;
+  padding: 4px 16px 4px 4px;
+  margin-bottom: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form-control.success label {
+  background-color: #2ecc71;
+}
+
+.form-control.error label {
+  background-color: #e74c3c;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 53px;
+  right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  background-color: #8e44ad;
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
